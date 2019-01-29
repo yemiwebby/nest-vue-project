@@ -1,27 +1,21 @@
-# Build a blog using Nest.js, TypeScript, React and MongoDB
+# Build a blog using Nest.js, Vue.js and MongoDB
 
-Application repo for a simple blog application built with Nest.js, TypeScript, React and MongoDB.
+Application repo for a simple blog application built with Nest.js, Vue.js and MongoDB.
 
 ## Getting Started
 This prototype is divided into two separate sections. Namely the Backend ( Built with Nest.js) and the frontend
-( Built with React ).
-
-Install TypeScript globally on your machine if you don't have it installed already:
-
-```bash
-npm install -g typescript
-```
+( Built with Vue.js ).
 
 ### Clone the repository
 To easily set up the application, clone this repository which contains directory for both sections of the project ( i.e `blog-backend` and `blog-frontend`)
 
 ```bash
-git clone https://github.com/yemiwebby/nest-react-project.git
+git clone https://github.com/yemiwebby/nest-vue-project.git
 ```
 
 ## Change directory into the newly cloned project
 ```bash
-cd nest-react-project
+cd nest-vue-project
 ```
 
 ## Backend
@@ -35,7 +29,6 @@ cd blog-backend
 ```bash
 npm install
 ```
-Once the installation process is complete, open the `blog-backend` with any favorite editor of yours and navigate to `./src/common/authentication.middleware.ts` and replace the `YOUR_DOMAIN` placeholder with the appropriate credential.
 
 ### MongoDB
 Ensure that you have mongoDB installed on your machine before running the application. I have this fully setup on my mac already.
@@ -53,11 +46,10 @@ Open another terminal and still within the `blog-backend` project directory run 
 npm run start:dev
 ```
 
-This will start the backend application on port `5000`. This was modified to avoid confliction with the frontend application which by default will run on port `3000`
-
+This will start the backend application on port `3000`.
 
 ## Frontend
-Open another terminal from the `nest-react-project` and navigate to the `blog-frontend` folder to setup the frontend
+Open another terminal from the `nest-vue-project` and navigate to the `blog-frontend` folder to setup the frontend
 
 ### Frontend dependencies
 ```bash
@@ -68,23 +60,16 @@ npm install
 ### Run the frontend app
 
 ```bash
-npm start
+npm run serve
 ```
 
-### Include Auth0 App credentials
-
-Navigate to `./src/utils/auth.tsx` file and replace the `YOUR_CLIENT_ID` and `YOUR_DOMAIN` placeholder with the appropriate credentials. You can find the placeholders within the `constructor()` and `logout()` method.
-
 ### Test the application
-Finally open your browser and view the application on http://localhost:3000
+Finally open your browser and view the application on http://localhost:8080
 
 ## Prerequisites
- [Node.js](https://nodejs.org/en/), [Yarn package manager](https://yarnpkg.com/lang/en/docs/install/#mac-stable), [MongoDB](https://docs.mongodb.com/v3.2/installation/) and [TypeScript](https://www.typescriptlang.org/)
-
+ [Node.js](https://nodejs.org/en/), [Npm](https://www.npmjs.com/), [MongoDB](https://docs.mongodb.com/v3.2/installation/)
 
 ## Built With
-[Nest.js]()
-[React.js]()
-[Auth0]() 
-[TypeScript]()
+[Nest.js](https://nestjs.com/)
+[Vue.js](https://vuejs.org/)
 [MongoDB]() 
