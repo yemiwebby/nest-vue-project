@@ -45,7 +45,6 @@ export default {
   created() {
     this.date_posted = new Date().toLocaleDateString();
   },
-  mounted() {},
   methods: {
     createPost() {
       let postData = {
@@ -59,6 +58,7 @@ export default {
     },
     __submitToServer(data) {
       axios.post(`${server.baseURL}/blog/post`, data).then(data => {
+        console.log(data);
         router.push({ name: "home" });
       });
     }
